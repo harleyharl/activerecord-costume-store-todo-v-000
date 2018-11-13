@@ -9,10 +9,14 @@
 # value types according to the spec
 
 class CreateCostumes < ActiveRecord::Migration
-  create_table :costumes do |costume|
-    costume.string :name
-    costume.decimal :price
-    costume.string :size
-    costume.text :image_url
-  end 
+
+  def change
+    create_table :costumes do |costume|
+      costume.string :name
+      costume.decimal :price
+      costume.string :size
+      costume.text :image_url
+    end
+  end
+  
 end
