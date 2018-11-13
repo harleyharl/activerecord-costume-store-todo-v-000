@@ -13,6 +13,6 @@ class CreateCostumes < ActiveRecord::Migration
     costume.string :name
     costume.decimal :price
     costume.string :size
-    costume.text :image_url 
-
+    costume.text :image_url
+  end 
 end
