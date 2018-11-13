@@ -5,7 +5,7 @@ class CreateCostumeStores < ActiveRecord::Migration[5.1]
   def change
     create_table :costume_stores do |costume_store|
       costume_store.string :name
-      costume_store.decimal :location
+      costume_store.string :location
       costume_store.string :inventory
       costume_store.text :employee_count
       costume_store.text :open_or_closed
